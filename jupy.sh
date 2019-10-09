@@ -34,7 +34,7 @@ node=\$(hostname -s)
 user=\$(whoami)
 
 # print tunneling instructions jupyter-log
-echo -e "ssh -N -L \${port}:\${node}:\${port} supercloud"
+echo -e "ssh -N -L \${port}:\${node}:\${port} ${REMOTE}"
 
 jupyter notebook  --no-browser --port=\${port} --ip="*"
 EOF
