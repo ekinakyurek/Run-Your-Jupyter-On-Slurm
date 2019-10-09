@@ -12,6 +12,6 @@ You can also modify job configurations in the same file. Note that exiting from 
 
 The script assumes that you have SSH Public Key Authentication to your login node (`hostname`), and you configure .ssh/known_hosts in your local computer.
 
-If you job cannot be taken immediately ( ~60s) in your SLURM the script will fail.
+If your job cannot be taken immediately ( ~60s) on your SLURM, the script will fail.
 
 Please feel free to make any improvement on the script via pull requests.
